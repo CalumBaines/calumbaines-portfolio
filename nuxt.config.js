@@ -24,6 +24,12 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
+    extractCSS: true,
+    extend(config, options) {
+      const extract = config.plugins.find(plugin => plugin.renderExtractedChunk)
+      extract.options.allChunks = true
+    },
+
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
