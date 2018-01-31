@@ -1,7 +1,11 @@
+const path = require('path');
+
 module.exports = {
   /*
   ** Headers of the page
   */
+  srcDir: 'src',
+
   head: {
     title: 'vue-boilerplate',
     meta: [
@@ -20,6 +24,11 @@ module.exports = {
   /*
   ** Build configuration
   */
+  css: [
+    '~/styles/variables.scss',
+    '~/styles/main.scss'
+  ],
+
   build: {
     /*
     ** Run ESLint on save
