@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'Button',
+  name: 'Accordion',
   props: {
     /**
     * The content for the button.
@@ -28,7 +28,29 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
-  @import "../../styles/variables.scss";
-  @import "Button.scss";
+  // @import "~/variables";
 
+  .buttonComponent {
+    color: blue;
+    display: inline-block;
+    border: 1px solid blue;
+    padding: 8px 16px;
+    font-size: 14px;
+    text-decoration: none;
+    &:hover {
+      background-color: blue;
+      color: white;
+    }
+    &.Red {
+      background-color: red;
+    }
+    &--large {
+      font-size: 16px;
+      padding: 16px 24px;
+    }
+    &--small {
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+  }
 </style>
