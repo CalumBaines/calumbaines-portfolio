@@ -1,0 +1,124 @@
+// Stylegide scss
+
+// Color swatch styles
+
+.colorSwatch {
+    margin: 0;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    &__item {
+        border: 1px solid #e6e6e6;
+        border-radius: 3px;
+        background: #ffffff;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        padding: 6px;
+        list-style: none;
+        min-width: 20%;
+    }
+    &__title {
+        @include font-lead;
+    }
+    &__hex {
+        @include font-nav;
+    }
+    &__swatch {
+        position: relative;
+        width: 100%;
+        padding: 50% 0;
+        list-style: none;
+            &::before, &::after {
+                /* lighter and darker color shades of the same swatch */
+                content: '';
+                position: absolute;
+                bottom: 0;
+                width: 50%;
+                height: 20%;
+            }
+            &::before {
+                left: 0;
+            }
+            &::after {
+                right: 0;
+            }
+
+            &--primary {
+                background: $color-primary;
+
+                &::before {
+                    background: lighten($color-primary, 5%);
+                }
+        
+                &::after {
+                    background: darken($color-primary, 5%);
+                }
+            }
+
+            &--secondary {
+                background: $color-secondary;
+
+                &::before {
+                    background: lighten($color-secondary, 5%);
+                }
+        
+                &::after {
+                    background: darken($color-secondary, 5%);
+                }
+            }
+
+            &--white {
+                background: $color-white;
+
+                &::before {
+                    background: lighten($color-white, 5%);
+                }
+        
+                &::after {
+                    background: darken($color-white, 5%);
+                }
+            }
+
+            &--black {
+                background: $color-black;
+
+                &::before {
+                    background: lighten($color-black, 5%);
+                }
+        
+                &::after {
+                    background: darken($color-black, 5%);
+                }
+            }
+
+    }
+}
+
+// Typography
+
+// Grid
+
+// Component fixes for styelguide
+
+// Styleguide design 
+
+.styleguideSpotlight {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        width: 49% !important;
+        &:hover {
+            .styleguideSpotlight__image {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 45px 0 rgba(104,104,104,0.15);
+            }
+        }
+    }
+    &__image {
+        background-color: #ccc;
+        height: 300px;
+        width: 100%;
+        transition: .3s all ease-in-out;
+    }
+
+}

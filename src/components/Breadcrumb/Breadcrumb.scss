@@ -1,0 +1,12 @@
+.breadcrumb {
+    display: flex;
+    &__item {
+        @include font-nav;
+    }
+    &__break {
+        color: $color-black;
+    }
+    &__break {
+        padding: 0 $padding-xsmall;
+    }
+}

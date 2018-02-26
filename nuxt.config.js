@@ -25,8 +25,7 @@ module.exports = {
   ** Build configuration
   */
   css: [
-    '~/styles/variables.scss',
-    '~/styles/main.scss'
+    '~/globals/scss/main.scss'
   ],
 
   build: {

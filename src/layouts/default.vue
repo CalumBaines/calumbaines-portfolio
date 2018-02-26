@@ -5,7 +5,7 @@
 </template>
 
 <style>
-  /* @import "../styles/variables"; */
+  @import "../globals/scss/variables.scss";
 
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;

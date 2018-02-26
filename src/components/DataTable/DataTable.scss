@@ -1,0 +1,15 @@
+.dataTable {
+    @include font-nav;
+    width: 100%;
+    border-collapse: collapse;
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: $base;
+    }
+    tr {
+        &:nth-child(even) {
+            background-color: $color-secondary;
+        }
+    }
+}

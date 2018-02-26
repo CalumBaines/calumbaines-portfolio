@@ -1,0 +1,35 @@
+.accordion {
+    padding: $padding-small $padding-normal;
+    border: 1px solid $color-primary;
+    display: flex;
+    margin: $padding-small 0;
+    flex-wrap: wrap;
+    &__link {
+        display: flex;
+        width: 100%;
+        cursor: pointer;
+    }
+    &__title {
+        @include font-lead;
+        margin: 0;
+    }
+    &__icon.fas {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        color: $color-black;
+    }
+    &__panel {
+        width: 100%;
+        margin-top: $padding-small;
+    }
+    &__content {
+        margin: 0;
+    }
+
+    &--open {
+        .accordion__icon {
+            transform: rotate(180deg);
+        }
+    }
+}

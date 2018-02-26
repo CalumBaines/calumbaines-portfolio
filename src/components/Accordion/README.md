@@ -1,2 +1,3 @@
-Accordion read me content
 
+
+    <Accordion accordionTitle="Accordion Title" ></Accordion>

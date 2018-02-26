@@ -1,10 +1,22 @@
-Elit voluptate duis labore exercitation elit consectetur ad consequat enim et id ullamco cillum. Voluptate sit ipsum sunt laboris do dolore. Incididunt incididunt pariatur ex commodo.
+This styleguide provides developers with a boilerplate for their next project, a collection of reusable HTML and SCSS components to build on. All current components are checked against AA standards.
 
-# Heading 1
+### Installing
+To get your project started install the project using git.
 
-## Heading 2
+Navigate to the foler you wish to install this project
+```shell
+cd new-project
+```
+Install the files directly into the folder you just navigated to. Adding the '.' after the URL will clone the project at the root removing the containing folder.
 
-### Heading 3
+```shell
+git clone https://github.com/CalumBaines/vue-boilerplate .
+```
+### Setup
+Start by installing all of the dependencies, assuming the node and npm are up to date and installed. You can also use yarn to install if you wish.
+```shell
+npm install
+```
 
 #### Heading 4
 

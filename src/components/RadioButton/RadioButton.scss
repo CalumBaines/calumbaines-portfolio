@@ -1,0 +1,73 @@
+.radio {
+    @include font-nav;
+    position: relative;
+    display: block;
+    margin-bottom: $padding-small;
+    padding-left: $padding-normal;
+    cursor: pointer;
+
+    &:hover {
+        .radio__input {
+             ~ .radio__indicator {
+                background: #ccc;
+            }
+            &:not([disabled]):checked {
+                ~ .radio__indicator {
+                    background: darken($color-primary, 5%);
+                }
+            }
+        }
+    }
+
+    &__input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        &:focus {
+            ~ .radio__indicator {
+                background: #ccc;                
+            }
+        }
+
+        &:checked {
+            ~ .radio__indicator {
+                background: $color-primary;  
+                &:after {
+                    display: block;
+                }             
+            }
+        }
+
+        &:disabled {
+            ~ .radio__indicator {
+                pointer-events: none;
+                opacity: .6;
+                background: #e6e6e6;   
+                &:after {
+                    border-color: #7b7b7b;
+                }           
+            }
+        }
+    }
+
+    &__indicator {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: #e6e6e6;
+        border-radius: 50%;
+        &:after {
+            position: absolute;
+            display: none;
+            content: '';
+            top: 7px;
+            left: 7px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #fff;
+        }
+    }
+}
