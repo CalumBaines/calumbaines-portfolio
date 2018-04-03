@@ -5,7 +5,7 @@
   "author": "cbaines@quba.co.uk",
   "private": true,
   "scripts": {
-    "dev": "npx css-gridish && nuxt",
+    "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "css-loader": "^0.28.9",
+    "npm": "^5.8.0",
     "nuxt": "^1.0.0",
     "vuejs-datepicker": "^0.9.26"
   },

@@ -12,14 +12,14 @@ export default {
   name: 'Button',
   props: {
     /**
-    * The content for the button
+    * The content for the Button
     */
     btnText: {
       type: String,
       default: 'Button'
     },
     /**
-    * The size of the button
+    * The size of the Button
     * `small, normal`.
     * This will create a custom class modifier 'buttonComponent__small'
     */
