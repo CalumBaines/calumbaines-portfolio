@@ -1,0 +1,17 @@
+.ContentBlock {
+    @include container--small;
+    flex-direction: column;
+    margin-bottom: $spacing-large;
+    &__title {
+        margin-bottom: 0;
+    }
+    &__content {
+        
+        @media (min-width: $tablet) {
+            padding: 0 $spacing-large;
+        }
+        .fa-external-link-alt {
+            margin-left: $padding-xsmall;
+        }
+    }
+}

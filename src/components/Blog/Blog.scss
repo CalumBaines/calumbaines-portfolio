@@ -1,0 +1,40 @@
+.Blog {
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 20px 0 rgba(76,76,76,0.10);
+    border-radius: 3px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: $spacing-small;
+    border: none;
+    width: 100%;
+    &:hover {
+        border: none;
+    }
+    &__thumbnail {
+        height: auto;
+        position: relative;
+        flex-basis: 50%;
+        overflow: hidden;
+    }
+    &__img {
+        position: absolute;
+        min-width: 100%;
+        z-index: 0;
+        min-height: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    &__content {
+        padding: $padding-small $padding-normal;
+    }
+    &__label {
+
+    }
+    &__title {
+        
+    }
+    &__para {
+
+    }
+}

@@ -1,0 +1,47 @@
+.Workflow {
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        @media (min-width: $tablet) {
+            flex-direction: row;
+        }
+    }
+    &__item {
+        flex-basis: calc(33.3333% - 10px);
+        &:first-of-type {
+            .Workflow__label {
+                background: linear-gradient(-90deg, #37EEA4 14%, #52FCDA 85%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        &:nth-of-type(2) {
+            .Workflow__label {
+                background: linear-gradient(-90deg, #B937EE 14%, #9152FC 85%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        &:nth-of-type(3) {
+            .Workflow__label {
+                background-image: linear-gradient(-121deg, #EE9D37 0%, #FCC752 90%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+    &__label {
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    &__title {
+        color: white;
+        margin-top: 0;
+    }
+    &__description {
+        color: $color-offwhite;
+        font-weight: 400;
+    }
+}

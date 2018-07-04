@@ -8,7 +8,8 @@ $container-gutter--tablet: 50px;
 $container-gutter--desktop: 70px;
 
 // page dimensions
-$page-width: 1230px;
+$page-width: 1024px;
+$page-width--small: 920px;
 $limit: $page-width + ($container-gutter--desktop * 2);
 
 // Padding
@@ -17,6 +18,11 @@ $padding-small: 16px;
 $padding-normal: 24px;
 $padding-large: 32px;
 $padding-xlarge: 40px;
+
+// Spacing
+$spacing-small: 20px;
+$spacing-normal: 40px;
+$spacing-large: 80px;
 
 // Fonts
 $font-family: 'Montserrat', sans-serif;
@@ -27,3 +33,6 @@ $line-height: 1.5;
 // Timings
 $transition-enter: 200ms;
 $transition-leave: 500ms;
+
+$mobile: 500px;
+$tablet: 800px;

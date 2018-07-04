@@ -1,0 +1,35 @@
+.LogoGrid {
+    &__container {
+        @include container--small;
+        margin-top: $spacing-large;
+        margin-bottom: $spacing-large;
+    }
+    &__item {
+        flex-basis: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: $padding-large $padding-normal;
+        border: 1px solid $color-offwhite;
+        @media (min-width: $mobile) {
+            flex-basis: 50%;
+        }
+        @media (min-width: $tablet) {
+            border: none;
+            border-right: 1px solid $color-offwhite;
+            flex-basis: 25%;
+        }
+        &:nth-of-type(4), &:last-of-type {
+            @media (min-width: $tablet) {
+                border-right: none;
+            }
+        }
+        &:nth-child(n+1):nth-child(-n+4) {
+            border-bottom: 1px solid $color-offwhite;
+            display: none;
+            @media (min-width: $tablet) {
+                display: flex;
+            }
+        }
+    }
+}

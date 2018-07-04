@@ -1,0 +1,94 @@
+.Footer {
+    background-color: $color-black;
+    padding: $spacing-large 0;
+    
+    &__container {
+        @include container--small;
+        flex-direction: column;
+        @media (min-width: $mobile) {
+            flex-direction: row;
+        }
+    }
+    &__left {
+        
+        @media (min-width: $mobile) {
+            width: 25%;
+        }
+    }
+    &__title {
+        @include font-para;
+        color: white;
+        margin: 0 0 $padding-xsmall 0;
+        font-weight: 600;
+    }
+    &__address {
+        @include font-para;
+        color: #D5D5D5;        
+        font-style: normal;
+        font-weight: 500;
+        margin: 0;
+        margin-bottom: $padding-xsmall;
+    }
+    &__contact {
+        display: block;
+        color: #D5D5D5;
+        font-weight: 500;
+        b {
+            color: #F8F8F8;
+        }
+    }
+    &__right {
+        @media (min-width: $mobile) {
+            margin-left: auto;
+        }
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+    }
+    &__item {
+        margin-bottom: $padding-xsmall;
+    }
+    &__link {
+        color: white;
+    }
+}
+
+.FooterBottom {
+    padding-top: $spacing-large;
+    &__list {
+        list-style: none;
+        padding: 0;
+    }
+    &__item {
+        display: inline-block;
+        margin-right: $padding-normal;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+    &__social {
+        
+        @media (min-width: $mobile) {
+            margin-left: auto;
+        }
+        .FooterBottom__item {
+            margin-right: $padding-small;
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+        .FooterBottom__link {
+            border: none;
+            &:hover {
+                border: none;
+            }
+        }
+    }
+    &__link {
+        color: #D5D5D5;
+        &:hover {
+            color: $color-white;
+        }
+    }
+}

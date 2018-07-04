@@ -1,0 +1,14 @@
+.HomeBanner {
+    background-color: $color-black;
+    flex-basis: 100%;
+    &__container {
+        @include container--small;
+        padding-top: $padding-xlarge;
+        padding-bottom: $padding-xlarge * 2;
+    }
+    &__title {
+        color: white;
+        margin: 0;
+        padding-bottom: $padding-xlarge * 2;
+    }
+}

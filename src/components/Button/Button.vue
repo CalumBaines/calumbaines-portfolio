@@ -1,10 +1,10 @@
 <template>
-    <a class="buttonComponent" 
-      v-bind:class="[size ? 'buttonComponent--' + size : '', icon ? 'buttonComponent--i' : '', secondary ? 'buttonComponent--secondary' : '']" 
-      href="#na">
+    <nuxt-link class="buttonComponent" 
+      v-bind:class="[size ? 'buttonComponent--' + size : '', icon ? 'buttonComponent--i' : '', secondary ? 'buttonComponent--secondary' : '', white ? 'buttonComponent--white' : '']" 
+      exact :to="btnUrl">
       {{ btnText }} 
       <i v-if="icon" v-bind:class="[icon ? 'buttonComponent__icon fas fa-' + icon : '']"></i>
-    </a>
+    </nuxt-link>
 </template>
 
 <script>
@@ -17,6 +17,10 @@ export default {
     btnText: {
       type: String,
       default: 'Button'
+    },
+    btnUrl: {
+      type: String,
+      default: '#na'
     },
     /**
     * The size of the Button
@@ -39,6 +43,10 @@ export default {
      * Use this boolean to select the type of button (primary or secondary)
      */
     secondary: {
+      type: Boolean,
+      default: false
+    },
+    white: {
       type: Boolean,
       default: false
     }

@@ -15,9 +15,13 @@
     "styleguide:build": "vue-styleguidist build"
   },
   "dependencies": {
+    "@nuxtjs/google-analytics": "^2.0.2",
+    "@nuxtjs/pwa": "^2.0.8",
+    "contentful": "^6.1.0",
     "css-loader": "^0.28.9",
     "npm": "^5.8.0",
     "nuxt": "^1.0.0",
+    "vue-markdown": "^2.2.4",
     "vuejs-datepicker": "^0.9.26"
   },
   "devDependencies": {

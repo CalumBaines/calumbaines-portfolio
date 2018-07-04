@@ -19,8 +19,12 @@ p.para__lead {
   @include font-lead;
 }
 
-p {
+p, span {
   @include font-para;
+}
+
+q {
+  @include font-quote;
 }
 
 a {
@@ -32,4 +36,12 @@ a {
   &:hover {
     border-bottom: 2px solid $color-primary;
   }
+}
+
+.Background--lightGrey {
+  background-color: #F8F8F8;
+}
+
+.RelatedContent {
+  padding: $spacing-large 0;
 }

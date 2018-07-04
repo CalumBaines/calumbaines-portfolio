@@ -1,0 +1,25 @@
+.Services {
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px 0 rgba(76,76,76,0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: $padding-large * 2 $padding-normal;
+    background-color: white;
+    margin-bottom: $spacing-small;
+    border-bottom: 0;
+    &:hover {
+        border-bottom: 0;
+    }
+    &__title {
+        text-align: center;
+        margin: 0 0 $padding-xsmall 0;
+    }
+    &__tags {
+        margin: 0;
+        color: $color-grey;
+        text-align: center;
+    }
+}

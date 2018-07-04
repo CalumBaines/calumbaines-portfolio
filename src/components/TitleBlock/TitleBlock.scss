@@ -1,0 +1,41 @@
+.TitleBlock {
+    &__container {
+        @include container--small;
+        margin: $spacing-large auto;
+    }
+    .ContactPage & {
+        margin-bottom: $padding-normal;
+    }
+    .RelatedContent & {
+        margin: 0 auto $spacing-small auto;
+    }
+    &__wrap {
+    }
+    &__label {
+        background: linear-gradient(-90deg, #B937EE 14%, #9152FC 85%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        font-size: 14px;
+        .TitleBlock--white & {
+            color: white;
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: unset;
+            background: none;
+        }
+    }
+    &__title {
+        margin: $padding-xsmall 0 $padding-xlarge 0;
+        .TitleBlock--white & {
+            color: white;
+        }
+        .TitleBlock--subheading & {
+            margin: $padding-xsmall 0;
+        }
+    }
+    &__para {
+        @media (min-width: $mobile) {
+            width: 45%;
+        }
+    }
+}

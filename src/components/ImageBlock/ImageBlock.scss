@@ -1,0 +1,16 @@
+.ImageBlock {
+    @include container;
+    margin: $spacing-large auto;
+    justify-content: center;
+    &__wrap {
+        display: flex;
+    }
+    &__item {
+        // width: 50%;
+    }
+    &__img {
+        width: 100%;
+        display: block;
+    }
+
+}

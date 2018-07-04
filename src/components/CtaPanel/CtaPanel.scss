@@ -1,0 +1,9 @@
+.CtaPanel {
+    background-image: linear-gradient(-90deg, #5E37EE 14%, #9152FC 85%);
+    padding: $spacing-large 0;
+    
+    &__container {
+        @include container--small;
+    }
+    
+}

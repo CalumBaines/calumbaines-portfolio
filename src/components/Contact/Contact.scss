@@ -1,0 +1,27 @@
+.Contact {
+    @include container--small;
+    margin-bottom: $spacing-large;
+    &__title {
+        @include font-para;
+        margin: 0 0 $padding-xsmall 0;
+        font-weight: 600;
+    }
+    &__address {
+        @include font-para;       
+        font-style: normal;
+        font-weight: 500;
+        margin: 0;
+        margin-bottom: $padding-xsmall;
+    }
+    &__contact {
+        display: block;
+        font-weight: 500;
+        margin: 0;
+        b {
+
+        }
+    }
+    &__location {
+        margin-right: 30px;
+    }
+}

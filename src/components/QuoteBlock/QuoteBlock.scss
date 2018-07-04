@@ -1,0 +1,25 @@
+.QuoteBlock {
+    @include container--small;
+    &__quote {
+        
+    }
+    &__content {
+        position: relative;
+        &:before {
+            font-family: 'Abril Fatface', cursive;          
+            content: "“";   
+            font-size: 280px;    
+            position: absolute;
+            line-height: 200px;   
+            top: -20px;  
+            left: -50px;
+            font-weight: 500;
+            color: #D5D5D5;
+            z-index: -1;
+        }
+    }
+    &__footer {
+        @include font-para;
+        color: $color-grey;
+    }
+}
