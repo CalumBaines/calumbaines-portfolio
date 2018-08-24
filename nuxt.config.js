@@ -63,6 +63,7 @@ module.exports = {
 
   modules: [
     '@nuxtjs/pwa',
+    '@nuxtjs/sitemap',
     ['@nuxtjs/google-analytics', {
       id: 'UA-121350966-1'
     }]
@@ -76,6 +77,27 @@ module.exports = {
         // Defaults to `GET` if omitted
         method: 'GET'
       }
+    ]
+  },
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://calumbaines.co',
+    cacheTime: 1000 * 60 * 15,
+    gzip: true,
+    generate: false, // Enable me when using nuxt generate
+    exclude: [
+      '/blog'
+    ],
+    routes: [
+      '/case-studies/kingspan',
+      '/case-studies/ruddocks',
+      '/case-studies/markel-app',
+      '/case-studies/residence-one',
+      '/case-studies/efficiency-north',
+      '/case-studies/quba',
+      '/case-studies/joriside',
+      '/case-studies/interled',
+      
     ]
   }
 }

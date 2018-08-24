@@ -1,5 +1,5 @@
 {
-  "name": "vue-boilerplate",
+  "name": "calum-baines-portfolio",
   "version": "1.0.0",
   "description": "vue-js Boilerplate",
   "author": "cbaines@quba.co.uk",
@@ -17,6 +17,7 @@
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/pwa": "^2.0.8",
+    "@nuxtjs/sitemap": "^0.1.1",
     "contentful": "^6.1.0",
     "css-loader": "^0.28.9",
     "npm": "^5.8.0",
