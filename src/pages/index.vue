@@ -33,6 +33,7 @@
       }).catch(console.error)
     },
 }
+
 </script>
 
 <template>
